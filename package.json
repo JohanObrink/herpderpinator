@@ -10,6 +10,9 @@
     "jade": "*",
     "css": "*",
     "passport": "~0.1.12",
-    "mongoose": "~3.2.1"
+    "mongoose": "~3.2.1",
+    "passport-facebook": "~0.1.4",
+    "passport-twitter": "~0.1.4",
+    "less-middleware": "~0.1.6"
   }
 }
