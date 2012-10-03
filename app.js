@@ -7,7 +7,25 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , mongoose = require('mongoose')
+  , passport = require('passport')
+  , util = require('util')
+  , FacebookStrategy = require('passport-facebook').Strategy
+  , Schema = mongoose.Schema;
+
+var UserSchema = new Schema({
+  provider: String,
+  uid: String,
+  name: String,
+  image: String,
+  created: {type: Date, default: Date.now}
+});
+
+mongoose.connect('mongodb://localhost/herpderpinator');
+mongoose.model('User', UserSchema);
+
+var User = mongoose.model('User');
 
 var app = express();
 
