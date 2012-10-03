@@ -1,0 +1,12 @@
+{
+  "name": "myProject",
+  "version": "1.0.0",
+  "main": [
+    "./path/to/app.css",
+    "./path/to/app.js",
+    "./path/to/sprite.img"
+  ],
+  "dependencies": {
+    "jquery": "git://github.com/components/jquery.git#1.8.1"
+  }
+}
