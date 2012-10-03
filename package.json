@@ -14,5 +14,7 @@
     "passport-facebook": "~0.1.4",
     "passport-twitter": "~0.1.4",
     "less-middleware": "~0.1.6"
+  }, "scripts": {
+    "start": "foreman start"
   }
 }
